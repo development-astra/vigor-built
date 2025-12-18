@@ -1673,6 +1673,15 @@ form button.btn:hover {
   margin: 0 0 16px;
 }
 
+.why-choose-us h5 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 1.9rem;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  margin: 0 0 16px;
+}
+
 .why-choose-us p {
   font-size: 20px;
   font-family: "Montserrat";
