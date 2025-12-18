@@ -1695,7 +1695,7 @@ form button.btn:hover {
   padding: 0;
   margin: 30px 0 1.5rem 0;
   font-family: "Montserrat";
-  font-size: 20px;
+  font-size: 18px;
   line-height: 150%;
 }
 
@@ -1705,7 +1705,7 @@ form button.btn:hover {
   margin-bottom: 12px;
   display: flex;
   align-items: flex-start;
-  font-weight: 700;
+  font-weight: 500;
   color: #232F3A;
 }
 
@@ -1720,6 +1720,27 @@ form button.btn:hover {
   background: url('../../assets/img/general/checkmark-icon.svg') no-repeat center;
   background-size: contain;
 }
+
+.coach-copy p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  color: #232F3A;
+  font-weight: 500;
+}
+
+/* Mobile fix */
+@media (max-width: 767px) {
+  .coach-copy {
+    text-align: left;
+  }
+
+  .coach-copy p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
 
 .why-choose-us .btn {
   font-family: "Montserrat";
@@ -1747,7 +1768,7 @@ form button.btn:hover {
 
   .why-choose-us p,
   .why-choose-us ul {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
