@@ -15,8 +15,8 @@ $(document).ready(function() {
         var formData = $(this).serialize() + '&g-recaptcha-response=' + recaptchaResponse;
         
         $.ajax({
-            url: 'https://api.astraresults.com/send_email/v1/ez_miami_plumbing',
-            // url: 'http://localhost:4848/send_email/v1/ez_miami_plumbing',
+            url: 'https://api.astraresults.com/send_email/v1/vigor_built',
+            // url: 'http://localhost:4848/send_email/v1/vigor_built',
             type: 'POST',
             data: formData,
             dataType: 'json',
@@ -63,8 +63,8 @@ $(document).ready(function() {
         var formData = $(this).serialize() + '&g-recaptcha-response=' + recaptchaResponse;
         
         $.ajax({
-            url: 'https://api.astraresults.com/send_email/v1/ez_miami_plumbing',
-            // url: 'http://localhost:4848/send_email/v1/ez_miami_plumbing',
+            url: 'https://api.astraresults.com/send_email/v1/vigor_built',
+            // url: 'http://localhost:4848/send_email/v1/vigor_built',
             type: 'POST',
             data: formData,
             dataType: 'json',
