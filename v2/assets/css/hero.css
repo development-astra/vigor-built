@@ -619,10 +619,8 @@
   padding: 10px 14px;
   margin: 0 0 14px;
   border-radius: 999px;
-  background: rgba(0,0,0,.38);
+  background: #e51b27;
   border: 1px solid rgba(255,255,255,.16);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
 
   font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   font-weight: 800;
