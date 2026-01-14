@@ -1,0 +1,145 @@
+/* =========================
+   HEADER V2 (FIXED / CLEAN)
+========================= */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 1000;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .12);
+}
+
+.header-inner {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 10px 24px;
+    /* smaller */
+}
+
+.header-v2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+/* LOGO */
+.header-logo {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo img {
+    height: 84px;
+    /* ✅ key fix */
+    width: auto;
+    display: block;
+}
+
+/* CTA */
+.header-cta {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.call-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+/* BUTTON (single source of truth) */
+.btn-solid {
+    font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    font-weight: 900;
+    background: #e51b27;
+    color: #fff;
+    border: 2px solid #e51b27;
+    box-shadow: 0 5px 15px rgba(229, 27, 39, .45);
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 12px 22px;
+    border-radius: 999px;
+    text-decoration: none;
+    white-space: nowrap;
+
+    font-size: clamp(22px, 3vw, 40px);
+    line-height: 1;
+    /* ✅ remove huge line-height */
+    width: auto;
+    /* ✅ remove 70% width */
+}
+
+.call-sub {
+    margin: 0;
+    font-size: 18px;
+    color: #040404;
+    font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* =========================
+   TABLET / MOBILE HEADER
+========================= */
+@media (max-width: 992px) {
+    .header-inner {
+        padding: 10px 14px;
+    }
+
+    .header-v2 {
+        flex-direction: column;
+        /* ✅ stack */
+        align-items: center;
+        gap: 10px;
+    }
+
+    .header-logo img {
+        height: 54px;
+    }
+
+    .btn-solid {
+        width: 100%;
+        /* ✅ full width on mobile */
+        max-width: 520px;
+        font-size: 18px;
+        padding: 12px 16px;
+    }
+
+    .call-sub {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* keep header row: logo left, CTA right */
+    .header-v2 {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+    }
+
+    /* CTA block: button + text centered as a group */
+    .call-wrap {
+        align-items: center;
+        /* ✅ center items */
+        gap: 4px;
+    }
+
+    .call-sub {
+        text-align: center;
+        /* ✅ center the text */
+        width: 100%;
+    }
+}
