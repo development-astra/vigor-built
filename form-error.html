@@ -5,7 +5,10 @@
     <script>
       (function (w, d, s, l, i) {
         w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
         var f = d.getElementsByTagName(s)[0],
           j = d.createElement(s),
           dl = l != "dataLayer" ? "&l=" + l : "";
@@ -15,49 +18,48 @@
       })(window, document, "script", "dataLayer", "GTM-5LW4KGHB");
     </script>
     <!-- End Google Tag Manager -->
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Mail Not Sent</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
 
-    <!-- Favicons -->
-    <link href="assets/img/logo.webp" rel="icon" />
-    <link href="assets/img/logo.webp" rel="apple-touch-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oops! Something Went Wrong | Vigor Built</title>
 
-    <!-- Default Font: Montserrat -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/images/favicon/site.webmanifest" />
+
+    <!-- Fonts (match landing) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Vendor CSS Files -->
-    <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-    <link
-      href="assets/vendor/glightbox/css/glightbox.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="assets/vendor/fontawesome-free/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <!-- Your existing CSS -->
+    <link rel="stylesheet" href="/assets/css/variables.css" />
+    <link rel="stylesheet" href="/assets/css/header.css" />
+    <link rel="stylesheet" href="/assets/css/footer.css" />
 
-    <!-- Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet" />
+    <!-- NEW page css -->
+    <link rel="stylesheet" href="/assets/css/form-error.css" />
   </head>
 
-  <body class="bg-light">
+  <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript
       ><iframe
@@ -69,53 +71,52 @@
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <section
-      id="error-page"
-      class="error-page d-flex align-items-center justify-content-center text-center"
-    >
-      <div class="container">
-        <div class="error-content mx-auto">
-          <div class="error-icon mb-4">
-            <i class="bi bi-envelope-exclamation-fill"></i>
+    <main class="fe-hero">
+      <div class="fe-hero__bg" aria-hidden="true"></div>
+      <div class="fe-hero__overlay" aria-hidden="true"></div>
+
+      <div class="fe-wrap">
+        <div class="fe-card">
+          <div class="fe-icon" aria-hidden="true">
+            <!-- envelope + exclamation icon -->
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Zm-8 3.5a1 1 0 0 1 1 1V16a1 1 0 1 1-2 0v-2.5a1 1 0 0 1 1-1Zm0 6a1.15 1.15 0 1 1 0 2.3 1.15 1.15 0 0 1 0-2.3Z"
+              />
+            </svg>
           </div>
-          <h1 class="fw-bold mb-2">Oops! Something Went Wrong</h1>
-          <p class="mb-4">
+
+          <h1 class="fe-title">Oops! Something Went Wrong</h1>
+
+          <p class="fe-sub">
             Sorry, something went wrong while sending your message. Please try
             again later or contact us directly for immediate assistance.
           </p>
-          <a href="/" class="btn btn-main">Back to Home</a>
-          <div class="contact-number mt-4">
-            Or call us directly at
-            <strong><a href="tel:+13054955681">(305) 495-5681</a></strong>
+
+          <div class="fe-actions">
+            <button
+              class="fe-btn fe-btn--primary"
+              type="button"
+              onclick="window.location.replace('/')"
+            >
+              Back to Home
+            </button>
+          </div>
+
+          <div class="fe-call">
+            Or call us directly at <a href="tel:13053438788">(305) 343-8788</a>
+          </div>
+
+          <div class="fe-foot">
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            © <span>Copyright by</span> Vigor Built &amp; Astra Results
+            Marketing. All Rights Reserved.
           </div>
         </div>
       </div>
-    </section>
-    <!-- End Form Error Section -->
-
-    <!-- Scroll Top -->
-    <a
-      href="#"
-      id="scroll-top"
-      class="scroll-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
-
-    <!-- Preloader -->
-    <div id="preloader"></div>
-
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/geolocation/geotarget.js"></script>
-    <script src="assets/vendor/readmore-readless/readmore-readless.js"></script>
-
-    <!-- Main JS File -->
-    <script src="assets/js/main.js"></script>
-
-    <!-- CallRail JS Snippet -->
+    </main>
     <script
       type="text/javascript"
       src="//cdn.callrail.com/companies/684147658/b1bbd1e2271ba21f1d50/12/swap.js"

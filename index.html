@@ -1,965 +1,1159 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-5LW4KGHB');</script>
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5LW4KGHB");
+    </script>
     <!-- End Google Tag Manager -->
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>#1 Personal Training Built Around You | VIGOR BUILT</title>
-    <meta name="description"
-        content="Work with Joshua Cordoba, a Certified Personal Trainer with 10+ years of experience. Personalized fitness and lifestyle coaching designed for real, long-term results. Book your free consultation today.">
-    <meta name="keywords" content="">
-
-    <!-- Favicons -->
-    <link href="assets/img/logo.webp" rel="icon">
-    <link href="assets/img/logo.webp" rel="apple-touch-icon">
-
-    <!-- Default Font: Montserrat -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-    <!-- Owl Carousel -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
-
-
-    <!-- Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet">
-
-    <!-- reCAPTCHA v2 -->
+    <meta
+      name="description"
+      content="Trusted HVAC experts specializing in premium cooling, air quality, and emergency AC support for homes and commercial buildings."
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/why-trust.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/hero.css" />
+    <link rel="stylesheet" href="assets/css/services.css" />
+    <link rel="stylesheet" href="assets/css/pros.css" />
+    <link rel="stylesheet" href="assets/css/financing-cta.css" />
+    <link rel="stylesheet" href="assets/css/service-guarantee.css" />
+    <link rel="stylesheet" href="assets/css/reviews.css" />
+    <link rel="stylesheet" href="assets/css/service-areas.css" />
+    <link rel="stylesheet" href="assets/css/call-cta.css" />
+    <link rel="stylesheet" href="assets/css/recaptcha.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <!-- Google reCAPTCHA v2 -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <style>
+      .disabled-link {
+        pointer-events: none; /* disables click */
+        cursor: not-allowed;
+        opacity: 0.5; /* optional visual cue */
+        text-decoration: none;
+      }
+    </style>
+  </head>
 
-</head>
-
-<body class="index-page">
+  <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5LW4KGHB" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5LW4KGHB"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <!-- Header -->
-    <header id="header" class="header d-flex align-items-center fixed-top">
-        <div class="container-fluid">
-            <div class="d-flex justify-content-between align-items-center">
-                <!-- Location Badge (Hidden on Mobile) -->
-                <div class="badge location text-uppercase d-none d-md-block">
-                    <i class="bi bi-geo-alt-fill me-1"></i>
-                    <span id="location">Miami</span>
-                </div>
-
-                <!-- Logo (Always Visible) -->
-                <div class="d-md-none">
-                    <a href="/index.html" class="logo">
-                        <img src="assets/img/logo.webp" alt="MH Med Spa Logo">
-                    </a>
-                </div>
-
-                <!-- Logo for Desktop -->
-                <div class="d-none d-md-flex justify-content-center flex-grow-1">
-                    <a href="/index.html" class="logo">
-                        <img src="assets/img/logo.webp" alt="MH Med Spa Logo">
-                    </a>
-                </div>
-
-                <!-- Call To Action (Always Visible) -->
-                <div>
-                    <a href="tel:3053438788" class="header-cta-btn text-decoration-none">
-                        <span class="badge promotion text-uppercase">15% OFF CALL NOW</span>
-                        <div class="phone-number">CALL (305) 343-8788</div>
-                    </a>
-                </div>
-            </div>
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="header-inner header-v2">
+        <!-- LEFT: LOGO -->
+        <div class="header-logo">
+          <img src="assets/images/logo.svg" alt="Vigor Built" />
         </div>
-    </header><!-- End Header -->
 
-    <main class="main">
+        <!-- RIGHT: CTA -->
+        <div class="header-cta">
+          <div class="call-wrap">
+            <a class="btn-solid" href="tel:+13053438788">CALL NOW </a>
+            <span class="call-sub">CALL FOR A FREE CONSULTATION</span>
+          </div>
+        </div>
+      </div>
+    </header>
 
-        <!-- Hero Section -->
-        <section id="hero" class="hero section">
-            <div class="hero-background">
-                <div class="hero-overlay"></div>
-            </div><!-- Hero Background -->
+    <!-- HERO + FORM -->
+    <main>
+      <section class="hero">
+        <div class="hero-grid">
+          <!-- LEFT (blue overlay city) -->
+          <div class="hero-left">
+            <div class="hero-left-inner">
+              <!-- Mobile-only location pill inside hero -->
+              <div class="hero-loc">
+                <span class="hero-loc-pill">
+                  <img
+                    class="hero-loc-icon"
+                    src="assets/images/location-pin.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <span class="hero-loc-text" id="heroLocation">MIAMI</span>
+                </span>
+              </div>
 
-            <div class="owl-carousel hero-carousel d-block d-md-none">
-                <div class="item">
-                    <img src="assets/img/gallery-slider/img-slider-1.webp" alt="Owl Carousel">
+              <div class="hero-copy">
+                <div class="hero-kicker">
+                  #1 Personal Training Built Around You
                 </div>
-                <div class="item">
-                    <img src="assets/img/gallery-slider/img-slider-2.webp" alt="Owl Carousel">
+
+                <h1 class="hero-title">
+                  Want Real Results Without Extreme Diets or Burnout?
+                </h1>
+
+                <div class="hero-coach" aria-label="Meet our coach">
+                  <span class="hero-coach-label">MEET OUR COACH</span>
+                  <span class="hero-coach-sep">—</span>
+                  <span class="hero-coach-name">JOSHUA CORDOBA</span>
                 </div>
-                <div class="item">
-                    <img src="assets/img/gallery-slider/img-slider-3.webp" alt="Owl Carousel">
-                </div>
-                <div class="item">
-                    <img src="assets/img/gallery-slider/img-slider-4.webp" alt="Owl Carousel">
-                </div>
-                <div class="item">
-                    <img src="assets/img/gallery-slider/img-slider-5.webp" alt="Owl Carousel">
-                </div>
-                <div class="item">
-                    <img src="assets/img/gallery-slider/img-slider-6.webp" alt="Owl Carousel">
-                </div>
-            </div><!-- End Owl Carousel: Mobile Image Slider -->
 
-            <div class="container mt-5">
-                <div class="row justify-content-center text-center">
-                    <div class="col-lg-10">
-                        <div class="hero-content">
-                            <div
-                                class="d-block d-md-none d-flex align-items-center justify-content-center text-center text-uppercase montserrat-400 fw-normal">
-                                <span class="badge">
-                                    <i class="bi bi-geo-alt-fill me-1"></i>
-                                    <span id="location">Miami</span>
-                                </span>
-                            </div>
-                            <h4 class="montserrat-400 text-white text-uppercase mt-2">#1 Personal Training Built Around
-                                You</h4>
-                            <h1>Want Real Results Without Extreme Diets or Burnout?</h1>
+                <ul class="hero-points" aria-label="Key service highlights">
+                  <li class="hero-point">
+                    <img
+                      src="assets/images/hero-icon/3.svg"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                    <span
+                      >Certified Personal Trainer with 10+ years of experience
+                      in customized fitness and lifestyle coaching</span
+                    >
+                  </li>
+                  <li class="hero-point">
+                    <img
+                      src="assets/images/hero-icon/7.svg"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                    <span
+                      >Bachelor of Science in Kinesiology (University of Miami)
+                      with a strong foundation in human movement and
+                      performance</span
+                    >
+                  </li>
+                  <li class="hero-point">
+                    <img
+                      src="assets/images/hero-icon/5.svg"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                    <span
+                      >Accredited Certified Personal Trainer (CPT), committed to
+                      professional standards and long-term results</span
+                    >
+                  </li>
+                </ul>
 
-                            <div class="hero-btns mb-4">
-                                <a href="tel:3053438788" class="btn btn-outline-light cta-btn">
-                                    <span class="small-text">Get a Free Quote Now!</span><br>
-                                    <span class="big-text">CALL (305) 343-8788</span>
-                                </a>
-                            </div>
-
-                            <hr>
-
-                            <div class="text-center mt-4">
-                                <h5 class="montserrat-700 fw-bold fs-2 text-uppercase text-white">15% OFF WITH A FREE
-                                    CONSULTATION</h5>
-                                <!-- <h6 class="montserrat-600 fw-semibold fs-5 text-uppercase text-white d-none">AND A FREE ESTIMATE</h6> -->
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- Hero Content -->
-
-                <div class="row justify-content-center">
-                    <div class=" col-lg-8">
-                        <form id="contactFormHero" method="POST" class="contact-form row g-3">
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" name="full_name"
-                                        placeholder="Your full name" required>
-                                    <label>Full name</label>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" name="address"
-                                        placeholder="Complete Address" required>
-                                    <label>Complete Address</label>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" name="email" placeholder="name@example.com"
-                                        required>
-                                    <label>Email address</label>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="form-floating">
-                                    <input type="tel" class="form-control" name="phone" placeholder="Your phone number"
-                                        required>
-                                    <label>Phone number</label>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="form-floating">
-                                    <select class="form-select" name="service" required>
-                                        <option value="" disabled selected>Select a service</option>
-                                        <option value="One on One Training">One on One Training</option>
-                                        <option value="Online Coaching">Online Coaching</option>
-                                        <option value="Nutrition Planning">Nutrition Planning</option>
-                                    </select>
-                                    <label>Select a service</label>
-                                </div>
-                            </div>
-
-                            <!-- reCAPTCHA Widget -->
-                            <div class="col-12 d-flex justify-content-center">
-                                <div class="g-recaptcha" data-sitekey="6LdcNUMsAAAAAJKVs4p4lYGGohI77NLgECg_6Ayv"></div>
-                            </div>
-
-                            <div class="col-12">
-                                <button type="submit"
-                                    class="btn montserrat-700 text-uppercase text-white fs-5 w-100 d-flex align-items-center justify-content-center text-center">
-                                    Get Help Now
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17"
-                                        fill="none">
-                                        <g clip-path="url(#clip0_296_880)">
-                                            <path
-                                                d="M14.3117 9.6767L3.03678 16.1282C1.94321 16.7531 0.659276 15.6742 1.0889 14.4903L3.25403 8.5002L1.0889 2.51001C0.659276 1.32363 1.94321 0.247196 3.03678 0.872071L14.3117 7.32357C15.2245 7.84351 15.2222 9.15676 14.3117 9.6767Z"
-                                                fill="white" />
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip0_296_880">
-                                                <rect width="16" height="16" fill="white"
-                                                    transform="translate(0 0.5)" />
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
-                                </button>
-                                <p class="montserrat-400 fw-normal text-white text-center mt-2">
-                                    All of your personal information is stored in a safe location.
-                                </p>
-                            </div>
-                        </form>
-                    </div>
-                </div><!-- Contact Form -->
-
-            </div><!-- Content -->
-        </section><!-- End Hero Section -->
-
-        <!-- Why Choose Section -->
-        <section class="why-choose-us py-5 ">
-            <div class="container">
-                <div class="row align-items-center g-5">
-                    <div class="col-md-6">
-                        <div class="p-0">
-                            <h4 class="text-uppercase d-none">Why Choose Us</h4>
-                            <h1 class="text-uppercase">
-                                Meet Our Coach
-                            </h1>
-                            <h5>Joshua Cordoba</h5>
-                            <p class="d-none">We know everyone is different. That’s why our unique approach is personal,
-                                supportive, and results-driven.</p>
-                        </div>
-
-                        <div class="coach-copy">
-                            <ul class="coach-bullets">
-                                <li>Certified Personal Trainer with 10+ years of experience in customized fitness and
-                                    lifestyle coaching</li>
-                                <li>Bachelor of Science in Kinesiology (University of Miami) with a strong foundation in
-                                    human movement and performance</li>
-                                <li>Accredited Certified Personal Trainer (CPT), committed to professional standards and
-                                    long-term results</li>
-                            </ul>
-                        </div>
-
-                        <a href="tel:3053438788" class="btn btn-secondary rounded-2 text-uppercase">
-                            Start your transformation plan! <i class="fa fa-play"></i></a>
-                        </a>
-                    </div><!-- Left Column (content) -->
-
-                    <div class="col-md-6 text-center text-md-end mb-4 mb-md-0">
-                        <div class="position-relative d-inline-block">
-                            <img src="assets/img/general/why-us-img.webp" class="img-fluid" alt="Why Us Img">
-                        </div>
-                    </div><!-- Right Column (shapes/images) -->
-                </div>
+                <a class="hero-call" href="tel:+13053438788">
+                  <span class="hero-call-top">
+                    Start your transformation plan!</span
+                  >
+                  <span class="hero-call-main">CALL (305) 343-8788</span>
+                </a>
+              </div>
             </div>
-        </section><!-- End Why Choose Section -->
+          </div>
 
-        <!-- Services Section -->
-        <section id="services" class="services section ">
+          <!-- RIGHT (family image) -->
+          <div class="hero-right" aria-hidden="true"></div>
+        </div>
 
-            <div class="container section-title">
-                <div class="container section-title">
-                    <h4 class="text-uppercase">How Can We Help?</h4>
-                    <h1 class="text-uppercase">
-                        Our Services
-                    </h1>
-                    <p class="lead d-none">
-                        If you’re tired of generic workouts, confusing nutrition advice, or starting over and over
-                        again, Vigor Built is here to help.
+        <!-- FLOATING FORM CARD -->
+        <div class="hero-form-wrap">
+          <div class="hero-form-card">
+            <div class="hero-form-head">
+              <div class="hero-form-title">GET A FREE QUOTE NOW!</div>
+              <div class="hero-form-sub">15% OFF WITH A FREE CONSULTATION</div>
+            </div>
+
+            <form class="hero-form" id="contactFormHero" method="POST">
+              <div class="hero-fields">
+                <div class="hero-steps" data-step="1">
+                  <!-- STEP 1 -->
+                  <div class="hero-step is-active" data-step="1">
+                    <div class="hero-fields hero-fields--step">
+                      <div class="field field-name">
+                        <label>NAME</label>
+                        <input type="text" name="full_name" required />
+                      </div>
+
+                      <div class="field field-address">
+                        <label>COMPLETE ADDRESS</label>
+                        <input type="text" name="address" required />
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- STEP 2 -->
+                  <div class="hero-step" data-step="2">
+                    <div class="hero-fields hero-fields--step">
+                      <div class="field field-phone">
+                        <label>PHONE NUMBER</label>
+                        <input type="tel" name="phone" required />
+                      </div>
+
+                      <div class="field service-email">
+                        <label>EMAIL ADDRESS</label>
+                        <input type="email" name="email" required />
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- STEP 3 -->
+                  <div class="hero-step" data-step="3">
+                    <div class="hero-fields hero-fields--step">
+                      <div class="field service-field">
+                        <label>I NEED HELP WITH</label>
+                        <div class="form-floating">
+                          <select class="form-select" name="service" required>
+                            <option value="" disabled selected>
+                              Select a service
+                            </option>
+                            <option value="One on One Training">
+                              One on One Training
+                            </option>
+                            <option value="Online Coaching">
+                              Online Coaching
+                            </option>
+                            <option value="Nutrition Planning">
+                              Nutrition Planning
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="hero-recaptcha">
+                        <div
+                          class="g-recaptcha"
+                          data-sitekey="6LdcNUMsAAAAAJKVs4p4lYGGohI77NLgECg_6Ayv"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Controls -->
+                  <div class="hero-step-controls">
+                    <button
+                      class="hero-step-btn"
+                      type="button"
+                      id="heroNextBtn"
+                    >
+                      Step <span id="heroStepNum">1</span> to 3
+                    </button>
+
+                    <button
+                      class="hero-step-btn"
+                      type="submit"
+                      id="heroSubmitBtn"
+                    >
+                      Get Help Now <span class="arrow">➤</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="hero-form-note">
+                All of your personal information is stored in a safe location.
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY TRUST US | why-trust.css-->
+      <section class="why-trust" id="deals">
+        <div class="why-inner">
+          <h2 class="why-title">Limited Time Offers in Miami</h2>
+          <!-- <p class="why-sub">
+            Simply share or mention these offers to your Green Air Innovations
+            team member and save on your service!
+          </p> -->
+
+          <div class="why-grid">
+            <!-- Card 1 -->
+            <article class="why-card">
+              <span class="why-corner" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M20 13L13 20a2 2 0 0 1-2.83 0L4 13V4h9l7 7z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                  <circle
+                    cx="8.5"
+                    cy="8.5"
+                    r="1.5"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  />
+                </svg>
+              </span>
+
+              <div class="why-big">10%</div>
+              <div class="why-mid">OFF WITH FREE CONSULTATION</div>
+              <div class="why-small">Schedule Today!</div>
+            </article>
+          </div>
+
+          <a class="why-btn" href="tel:+13053438788"
+            >CALL FOR A FREE CONSULTATION <span aria-hidden="true">➤</span></a
+          >
+        </div>
+      </section>
+
+      <!-- OUR SERVICES | services.css-->
+      <section class="services" id="services">
+        <div class="services-inner">
+          <div class="services-head">
+            <div class="services-kicker">HOW CAN WE HELP?</div>
+            <h2 class="services-title">OUR SERVICES</h2>
+
+            <div
+              class="services-checks"
+              role="list"
+              aria-label="Service highlights"
+            >
+              <div class="services-check" role="listitem">
+                <!-- <span class="services-check-ico" aria-hidden="true">✓</span> -->
+                <span
+                  >Private training sessions designed to maximize results,
+                  accountability, and proper form.</span
+                >
+              </div>
+              <!-- <div class="services-check" role="listitem">
+                <span class="services-check-ico" aria-hidden="true">✓</span>
+                <span>Work is backed by our service guarantee</span>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="services-grid">
+            <article class="svc-item">
+              <div class="svc-icon" aria-hidden="true">
+                <svg
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.66839 24.6615C9.59634 26.6898 13.9631 24.3862 13.8701 20.7511C13.8685 19.5146 13.3766 18.3291 12.5022 17.4548C11.6279 16.5804 10.4424 16.0885 9.20592 16.0869C4.55822 16.1063 2.82283 22.1738 6.66839 24.6615Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M12.9754 25.1455C12.0247 25.9564 10.8376 26.4387 9.59075 26.5208C8.34389 26.6029 7.10382 26.2804 6.05497 25.6012C5.83953 25.4621 5.63283 25.3099 5.43605 25.1455C4.5223 25.5784 3.70227 26.1863 3.02236 26.9347C1.2602 28.7861 2.72569 32.0475 5.27862 31.9759L13.1273 31.9759C15.6817 32.0477 17.1459 28.7858 15.3834 26.9347C14.7045 26.1877 13.8866 25.58 12.9754 25.1455Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M26.7941 16.0869C25.5576 16.0885 24.3722 16.5805 23.4978 17.4548C22.6234 18.3292 22.1315 19.5147 22.1299 20.7512C22.3547 26.9262 31.2387 26.9225 31.4584 20.7511C31.4577 19.5143 30.9661 18.3283 30.0915 17.4538C29.2169 16.5792 28.031 16.0876 26.7941 16.0869Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M32.9768 26.9347C32.2969 26.1863 31.4769 25.5784 30.5631 25.1455C29.5135 26.0459 28.1763 26.5408 26.7935 26.5408C25.4106 26.5408 24.0734 26.0459 23.0238 25.1455C21.1515 26.0224 19.0601 27.9348 20.1038 30.1755C20.3382 30.7137 20.7255 31.1712 21.2176 31.4912C21.7096 31.8113 22.2849 31.9798 22.8718 31.9759H30.7206C33.2714 32.0469 34.741 28.7867 32.9768 26.9347Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M16.1766 4.02393H6.45424C6.30515 4.02437 6.1623 4.08378 6.05688 4.1892C5.95146 4.29462 5.89204 4.43748 5.8916 4.58656V11.5295C5.89204 11.6786 5.95146 11.8214 6.05688 11.9269C6.1623 12.0323 6.30515 12.0917 6.45424 12.0921H8.67105V14.3089C8.67215 14.4142 8.70265 14.517 8.75909 14.6058C8.81554 14.6946 8.8957 14.7658 8.9905 14.8114C9.08531 14.8571 9.19098 14.8753 9.2956 14.8641C9.40021 14.8528 9.4996 14.8125 9.58253 14.7478L12.9021 12.0922H16.1766C16.3257 12.0917 16.4686 12.0323 16.574 11.9269C16.6794 11.8215 16.7388 11.6786 16.7393 11.5295V4.58653C16.7388 4.43745 16.6794 4.2946 16.574 4.18918C16.4686 4.08377 16.3257 4.02436 16.1766 4.02393Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M26.4165 14.7478C26.4995 14.8125 26.5988 14.8528 26.7035 14.864C26.8081 14.8753 26.9137 14.857 27.0085 14.8114C27.1033 14.7657 27.1835 14.6945 27.2399 14.6057C27.2964 14.5169 27.3269 14.4141 27.328 14.3089V12.0921H29.5448C29.6939 12.0917 29.8367 12.0323 29.9421 11.9269C30.0476 11.8214 30.107 11.6786 30.1074 11.5295V4.58653C30.107 4.43745 30.0475 4.29461 29.9421 4.18919C29.8367 4.08378 29.6939 4.02436 29.5448 4.02393H19.8224C19.6733 4.02437 19.5305 4.08378 19.425 4.1892C19.3196 4.29462 19.2602 4.43748 19.2598 4.58656V11.5295C19.2602 11.6786 19.3196 11.8214 19.425 11.9269C19.5305 12.0323 19.6733 12.0917 19.8224 12.0921H23.097L26.4165 14.7478Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+              <h3 class="svc-title">One-On-One Personal Training</h3>
+              <ul class="svc-points">
+                <li>
+                  Private training sessions designed to maximize results,
+                  accountability, and proper form.
+                </li>
+              </ul>
+            </article>
+            <article class="svc-item">
+              <div class="svc-icon" aria-hidden="true">
+                <svg
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M30.0803 13.516V26.799C30.0803 27.2966 29.6779 27.699 29.1803 27.699H6.82322C6.32557 27.699 5.92323 27.2966 5.92323 26.799V12.5049C5.92323 12.0072 6.32557 11.6049 6.82322 11.6049H18.6609V9.21191H5.83852C4.56263 9.21191 3.53027 10.2443 3.53027 11.5201V29.1972H32.4732V13.516H30.0803Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M34.9292 30.0601C34.7386 29.7689 34.4209 29.5942 34.0715 29.5942H1.93094C1.58153 29.5942 1.26389 29.7689 1.0733 30.0601C0.882716 30.3513 0.856236 30.7166 0.988589 31.0078L1.44917 32.5484C1.88859 33.5331 2.86801 34.1631 3.94272 34.1631H32.0545C33.1239 34.1631 34.1033 33.5331 34.5586 32.5272L35.0086 31.0184C35.1462 30.706 35.1145 30.346 34.9292 30.0601ZM20.7357 32.5219H15.2668C14.9068 32.5219 14.6209 32.2307 14.6209 31.876C14.6209 31.5213 14.9068 31.2301 15.2668 31.2301H20.7357C21.0904 31.2301 21.3815 31.5213 21.3815 31.876C21.3815 32.2307 21.0904 32.5219 20.7357 32.5219Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M13.6463 20.1018C12.0676 20.1018 10.7832 18.621 10.7832 16.8004C10.7832 14.9803 12.0676 13.4995 13.6463 13.4995C15.2255 13.4995 16.5104 14.9803 16.5104 16.8004C16.5104 18.621 15.2255 20.1018 13.6463 20.1018Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M18.3781 25.8072H8.91537C8.75867 25.8072 8.60779 25.7416 8.50138 25.6272C8.39444 25.5124 8.3399 25.3572 8.35103 25.2011L8.52838 22.7255C8.62844 21.3337 9.79897 20.2437 11.1945 20.2437H16.0989C17.4945 20.2437 18.665 21.3337 18.7646 22.7255L18.9419 25.2011C18.953 25.3572 18.8985 25.5124 18.7921 25.6272C18.6857 25.7416 18.5343 25.8072 18.3781 25.8072Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M34.1829 2.26045C33.9076 2.00103 33.537 1.83691 33.1188 1.83691H20.6141C19.7564 1.83691 19.0576 2.54103 19.0576 3.39868V11.5569C19.0576 11.6416 19.0629 11.721 19.0788 11.8004C19.1953 12.5469 19.8412 13.1187 20.6141 13.1187H20.7094C21.1435 13.1187 21.4929 13.4681 21.4929 13.8969V15.7869C21.4929 16.3375 22.16 16.6234 22.5624 16.2316L25.4424 13.3516C25.5906 13.2034 25.7865 13.1187 25.9929 13.1187H33.1188C33.9817 13.1187 34.6806 12.4199 34.6806 11.5569V3.39868C34.6806 2.94868 34.49 2.54632 34.1829 2.26045ZM22.8641 8.57632C22.2235 8.57632 21.71 8.0575 21.71 7.41692C21.71 6.77633 22.2235 6.2628 22.8641 6.2628C23.5047 6.2628 24.0235 6.77633 24.0235 7.41692C24.0235 8.0575 23.5047 8.57632 22.8641 8.57632ZM26.8664 8.57632C26.2259 8.57632 25.7123 8.0575 25.7123 7.41692C25.7123 6.77633 26.2259 6.2628 26.8664 6.2628C27.507 6.2628 28.0259 6.77633 28.0259 7.41692C28.0259 8.0575 27.507 8.57632 26.8664 8.57632ZM30.8688 8.57632C30.2282 8.57632 29.7147 8.0575 29.7147 7.41692C29.7147 6.77633 30.2282 6.2628 30.8688 6.2628C31.5094 6.2628 32.0282 6.77633 32.0282 7.41692C32.0282 8.0575 31.5094 8.57632 30.8688 8.57632Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+              <h3 class="svc-title">Online Coaching</h3>
+              <ul class="svc-points">
+                <li>
+                  Train from anywhere with structured programs, check-ins, and
+                  ongoing support.
+                </li>
+              </ul>
+            </article>
+            <article class="svc-item">
+              <div class="svc-icon" aria-hidden="true">
+                <svg
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_156_175)">
+                    <path
+                      d="M6.72626 8.88216C6.53328 8.85528 6.33158 8.86666 6.13154 8.92025L3.23408 9.69661C2.43393 9.9111 1.9592 10.7333 2.17353 11.5335L2.36689 12.2572C2.4731 12.6567 2.23591 13.0669 1.83661 13.1742L1.11298 13.3704C0.312836 13.5849 -0.16189 14.4072 0.0524341 15.2074L2.38154 23.8997C2.59602 24.6999 3.41826 25.1746 4.21845 24.9603L4.94208 24.7669C5.34261 24.6588 5.75479 24.8964 5.862 25.2972L6.05536 26.0208C6.26985 26.821 7.09209 27.2957 7.89228 27.0814L10.7897 26.305C11.5899 26.0905 12.0646 25.2683 11.8503 24.4681L10.4009 19.0607C10.2937 18.6606 10.5191 18.2127 10.91 18.0759C12.8151 17.409 15.1815 16.889 17.9997 16.889C20.8179 16.889 23.1845 17.409 25.0895 18.0759C25.4803 18.2128 25.7057 18.6606 25.5985 19.0607L24.1491 24.4681C23.9348 25.2683 24.4095 26.0905 25.2097 26.305L28.1071 27.0814C28.9073 27.2957 29.7296 26.821 29.944 26.0208L30.1374 25.2972C30.2446 24.8964 30.6568 24.6588 31.0573 24.7669L31.781 24.9603C32.5811 25.1746 33.4034 24.6999 33.6179 23.8997L35.947 15.2074C36.1613 14.4072 35.6866 13.5849 34.8864 13.3704L34.1628 13.1742C33.7635 13.0669 33.5263 12.6567 33.6325 12.2572L33.8259 11.5335C34.0402 10.7333 33.5655 9.9111 32.7653 9.69661L29.8679 8.92025C29.0677 8.70592 28.2454 9.18065 28.031 9.98079L26.7631 14.7143C26.6559 15.1144 26.2551 15.3193 25.8631 15.1855C23.6974 14.4464 21.0521 13.889 17.9997 13.889C14.9472 13.889 12.3019 14.4464 10.1362 15.1856C9.74422 15.3193 9.34349 15.1144 9.23632 14.7143L7.96845 9.98079C7.80759 9.38068 7.30521 8.9628 6.72626 8.88216Z"
+                      fill="currentColor"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_156_175">
+                      <rect width="36" height="36" fill="currentColor" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <h3 class="svc-title">Customized Workout Programs</h3>
+              <ul class="svc-points">
+                <li>
+                  Workouts built around your fitness level, goals, and schedule.
+                </li>
+              </ul>
+            </article>
+            <article class="svc-item">
+              <div class="svc-icon" aria-hidden="true">
+                <svg
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_156_178)">
+                    <path
+                      d="M21.7576 26.2815L19.914 20.75L15.6953 29.1875L13.3201 22.0627L12.1086 23.2742H4.46777C5.32861 28.6485 9.4163 36.0008 14.8361 36.0008C15.8907 36.0008 16.9525 35.7083 18.0001 35.1303C19.0478 35.7083 20.1095 36.0008 21.1642 36.0008C26.583 36.0008 30.6711 28.6517 31.5325 23.2742H24.7649L21.7576 26.2815Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M14.2425 18.1578L16.0861 23.6893L20.3048 15.2518L22.68 22.3765L23.8915 21.165H31.7109C31.7109 15.3495 26.9796 10.6182 21.1641 10.6182C20.4659 10.6182 19.7677 10.6955 19.0547 10.853V8.43848H20.1094C24.1805 8.43848 27.4922 5.12676 27.4922 1.05566V0.000976563H24.3281C21.8011 0.000976563 19.5666 1.27715 18.2362 3.21848C18.2362 3.21862 18.236 3.21883 18.2359 3.21897C17.148 1.2993 15.0862 0.000976562 12.7266 0.000976562V2.11035C15.0528 2.11035 16.9453 4.00288 16.9453 6.3291V10.853C16.2323 10.6955 15.5341 10.6182 14.8359 10.6182C9.02039 10.6182 4.28906 15.3495 4.28906 21.165H11.2352L14.2425 18.1578Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M0 21.165V23.2744H4.46766C4.35023 22.5425 4.28906 21.8337 4.28906 21.165H0Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M31.7108 21.165C31.7108 21.8337 31.6496 22.5425 31.5322 23.2744H35.9999V21.165H31.7108Z"
+                      fill="currentColor"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_156_178">
+                      <rect width="36" height="36" fill="currentColor" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <h3 class="svc-title">Nutrition & Meal Planning</h3>
+              <ul class="svc-points">
+                <li>
+                  Simple, realistic meal plans that support fat loss, muscle
+                  gain, and overall health.
+                </li>
+              </ul>
+            </article>
+            <article class="svc-item">
+              <div class="svc-icon" aria-hidden="true">
+                <svg
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.5 32.6248H7.3125C9.16877 32.6248 10.6875 31.106 10.6875 29.2498V19.2373C10.6875 17.3698 9.16877 15.8623 7.3125 15.8623H4.5C2.64373 15.8623 1.125 17.3698 1.125 19.2373V29.2498C1.125 31.106 2.64373 32.6248 4.5 32.6248Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M19.4062 9.61865H16.5938C14.7375 9.61865 13.2188 11.1374 13.2188 12.9937V29.2499C13.2188 31.1061 14.7375 32.6249 16.5938 32.6249H19.4062C21.2625 32.6249 22.7812 31.1061 22.7812 29.2499V12.9937C22.7812 11.1374 21.2625 9.61865 19.4062 9.61865Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M31.5 3.375H28.6875C26.8312 3.375 25.3125 4.89373 25.3125 6.75V29.25C25.3125 31.1062 26.8312 32.625 28.6875 32.625H31.5C33.3563 32.625 34.875 31.1062 34.875 29.25V6.75C34.875 4.89373 33.3563 3.375 31.5 3.375Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+              <h3 class="svc-title">All Fitness Levels Welcome</h3>
+              <ul class="svc-points">
+                <li>
+                  From beginners to experienced athletes, we meet you where you
+                  are.
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROS SECTION | pros.csss-->
+      <section class="pros" id="guarantee">
+        <div class="pros-inner">
+          <!-- LEFT: image card -->
+          <div class="pros-media" aria-hidden="true">
+            <div class="pros-photo">
+              <img
+                src="assets/images/pro-bg.webp"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+
+          <!-- RIGHT: content -->
+          <div class="pros-content">
+            <h2 class="pros-title">Pros of Training With Vigor Built</h2>
+            <p>
+              We provide personalized fitness coaching designed around your
+              goals, your lifestyle, and your fitness level.
+            </p>
+            <div class="pros-grid">
+              <article class="pros-card">
+                <h3>Unique Fitness Support That Fits Your Life</h3>
+              </article>
+
+              <article class="pros-card">
+                <h3>Personalized Coaching, No Cookie-Cutter Plans</h3>
+              </article>
+
+              <article class="pros-card">
+                <h3>Clear Guidance and Accountability</h3>
+              </article>
+
+              <article class="pros-card">
+                <h3>Sustainable Nutrition, Not Extreme Diets</h3>
+              </article>
+
+              <article class="pros-card">
+                <h3>Flexible Training Options, In-Person or Online</h3>
+              </article>
+
+              <article class="pros-card">
+                <h3>Confidence, Strength, and Long-Term Results</h3>
+              </article>
+            </div>
+
+            <div class="pros-cta">
+              <a class="pros-btn" href="tel:+13053438788">
+                CALL FOR A FREE CONSULTATION<span aria-hidden="true">➤</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FINANCING CTA | financing-cta.css-->
+      <section class="results" id="results">
+        <div class="results__inner">
+          <h2 class="results__title">VIEW OUR RESULTS</h2>
+
+          <div class="results__grid">
+            <!-- 1 -->
+            <article class="result-card">
+              <div class="result-card__media">
+                <img
+                  src="assets/images/gallery/gallery-img-1.webp"
+                  alt="Result 1"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="result-card__ribbon">
+                <span>TRANSFORMED IN 16 WEEKS!</span>
+              </div>
+            </article>
+
+            <!-- 2 -->
+            <article class="result-card">
+              <div class="result-card__media">
+                <img
+                  src="assets/images/gallery/gallery-img-2.webp"
+                  alt="Result 2"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="result-card__ribbon">
+                <span>DROPPED 25 POUNDS IN 90 DAYS</span>
+              </div>
+            </article>
+
+            <!-- 3 -->
+            <article class="result-card">
+              <div class="result-card__media">
+                <img
+                  src="assets/images/gallery/gallery-img-3.webp"
+                  alt="Result 3"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="result-card__ribbon">
+                <span>BURNED 12 POUNDS OF FAT IN 12 WEEKS</span>
+              </div>
+            </article>
+
+            <!-- 4 -->
+            <article class="result-card">
+              <div class="result-card__media">
+                <img
+                  src="assets/images/gallery/gallery-img-4.webp"
+                  alt="Result 4"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="result-card__ribbon">
+                <span>LOST 18 POUNDS OF FAT IN 16 WEEKS!</span>
+              </div>
+            </article>
+
+            <!-- 5 -->
+            <article class="result-card">
+              <div class="result-card__media">
+                <img
+                  src="assets/images/gallery/gallery-img-5.webp"
+                  alt="Result 5"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="result-card__ribbon">
+                <span>SHE LOST 20 POUNDS!</span>
+              </div>
+            </article>
+
+            <!-- 6 -->
+            <article class="result-card">
+              <div class="result-card__media">
+                <img
+                  src="assets/images/gallery/gallery-img-6.webp"
+                  alt="Result 6"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="result-card__ribbon">
+                <span>4 MONTH TRANSFORMATION!</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICE AREAS | service-areas.css -->
+      <section class="service-areas" id="service-area">
+        <div class="sa2-inner">
+          <!-- LEFT -->
+          <div class="sa2-left">
+            <h2 class="sa2-title">
+              Proudly serving the following areas <br />
+              with
+              <span class="sa2-highlight">Professional Personal Training</span>
+            </h2>
+
+            <!-- <p class="sa2-sub">
+              In-person training availability may vary by location. Call to
+              confirm scheduling near you.
+            </p> -->
+          </div>
+
+          <!-- RIGHT -->
+          <div class="sa2-right" aria-label="Service areas by county">
+            <article class="sa2-card sa2-card--single">
+              <div class="sa2-card-head">
+                <span class="sa2-pin" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M12 22s7-6.2 7-12A7 7 0 0 0 5 10c0 5.8 7 12 7 12Z"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                    />
+                    <circle
+                      cx="12"
+                      cy="10"
+                      r="2.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </span>
+                <h3 class="sa2-card-title">Miami Dade County</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CALL CTA BAR | footer.css -->
+      <section class="final-cta">
+        <!-- FULL WIDTH BLUE BACKGROUND -->
+        <div class="final-cta-bg-wrap">
+          <div class="final-cta-bg-card">
+            <!-- CENTERED CONTENT -->
+            <div class="final-cta-container">
+              <div class="final-cta-content">
+                <!-- LEFT -->
+                <div class="final-left">
+                  <div class="final-logo-box">
+                    <img src="assets/images/logo.svg" alt="Green Air" />
+                  </div>
+
+                  <h2 class="final-title">Start Seeing Progress Today</h2>
+
+                  <p class="final-desc">
+                    Stop guessing and start seeing real progress. Whether you
+                    want to lose weight, build muscle, improve energy, or feel
+                    stronger, Vigor Built creates a plan that works for you.
+                    Book your consultation today and take the first step toward
+                    results that last.
+                  </p>
+
+                  <a class="final-call" href="tel:+13053438788">
+                    <span class="final-call-top">Get a Free Quote Now!</span>
+                    <span class="final-call-main">CALL (305) 343-8788</span>
+                  </a>
+                </div>
+
+                <!-- RIGHT -->
+                <div class="final-right">
+                  <div class="final-offer">
+                    <!-- <span class="final-offer-pill">$185 OFF</span> -->
+                    <span class="final-offer-text"
+                      >#1 Personal Training Built Around You</span
+                    >
+                  </div>
+
+                  <div class="final-offer-sub">
+                    15% OFF WITH A FREE CONSULTATION
+                  </div>
+
+                  <form class="final-form" id="contactFormFooter" method="POST">
+                    <div class="final-grid">
+                      <div class="final-field">
+                        <label>NAME</label>
+                        <input
+                          type="text"
+                          name="full_name"
+                          placeholder="Name"
+                          required
+                        />
+                      </div>
+
+                      <div class="final-field">
+                        <label>COMPLETE ADDRESS</label>
+                        <input
+                          type="text"
+                          name="address"
+                          placeholder="Complete Address"
+                          required
+                        />
+                      </div>
+
+                      <div class="final-field">
+                        <label>PHONE NUMBER</label>
+                        <input
+                          type="tel"
+                          name="phone"
+                          placeholder="Phone Number"
+                          required
+                        />
+                      </div>
+
+                      <div class="final-field">
+                        <label>EMAIL ADDRESS</label>
+                        <input
+                          type="email"
+                          name="email"
+                          placeholder="Email Address"
+                          required
+                        />
+                      </div>
+
+                      <div class="final-field">
+                        <label>SELECT A SERVICE</label>
+                        <select class="form-select" name="service" required>
+                          <option value="" disabled selected>
+                            Select a Service
+                          </option>
+                          <option value="One on One Training">
+                            One on One Training
+                          </option>
+                          <option value="Online Coaching">
+                            Online Coaching
+                          </option>
+                          <option value="Nutrition Planning">
+                            Nutrition Planning
+                          </option>
+                        </select>
+                      </div>
+
+                      <div class="final-field final-recaptcha">
+                        <div class="recaptcha-scale">
+                          <div
+                            class="g-recaptcha"
+                            data-sitekey="6LdcNUMsAAAAAJKVs4p4lYGGohI77NLgECg_6Ayv"
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <button class="final-submit" type="submit">
+                      GET HELP NOW ➤
+                    </button>
+
+                    <p class="final-note">
+                      All of your personal information is stored in a safe
+                      location.
                     </p>
+                  </form>
                 </div>
-            </div><!-- End Section Title -->
+              </div>
 
-            <div class="container">
-
-                <div class="row row-cols-1 row-cols-md-2 g-4">
-
-                    <div class="col mx-md-auto">
-                        <div class="card h-100 p-3 rounded-4 shadow-sm">
-                            <div class="d-flex gap-3">
-                                <div class="icon-wrapper d-flex align-items-start justify-content-center">
-                                    <img src="/assets/img/service-icons/1.svg" class="img-fluid icon-img" alt="">
-                                </div><!-- Service Icon -->
-
-                                <div>
-                                    <h5 class="card-title mb-1 fw-bold">One-On-One Personal Training</h5>
-                                    <p class="card-text mb-0">
-                                        Private training sessions designed to maximize results, accountability, and
-                                        proper form.
-                                    </p>
-                                </div><!-- Service Details -->
-                            </div>
-
-                            <div class="card-footer bg-transparent border-0 p-0 mt-3">
-                                <a href="tel:3053438788"
-                                    class="btn btn-primary w-100 text-uppercase fw-bold py-2 rounded-3">
-                                    Call Now <i class="fa fa-play ms-2"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div><!-- Service Item -->
-
-                    <div class="col mx-md-auto">
-                        <div class="card h-100 p-3 rounded-4 shadow-sm">
-                            <div class="d-flex gap-3">
-                                <div class="icon-wrapper d-flex align-items-start justify-content-center">
-                                    <img src="/assets/img/service-icons/2.svg" class="img-fluid icon-img" alt="">
-                                </div><!-- Service Icon -->
-
-                                <div>
-                                    <h5 class="card-title mb-1 fw-bold">Online Coaching</h5>
-                                    <p class="card-text mb-0">
-                                        Train from anywhere with structured programs, check-ins, and ongoing support.
-                                    </p>
-                                </div><!-- Service Details -->
-                            </div>
-
-                            <div class="card-footer bg-transparent border-0 p-0 mt-3">
-                                <a href="tel:3053438788"
-                                    class="btn btn-primary w-100 text-uppercase fw-bold py-2 rounded-3">
-                                    Call Now <i class="fa fa-play ms-2"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div><!-- Service Item -->
-
-                    <div class="col mx-md-auto">
-                        <div class="card h-100 p-3 rounded-4 shadow-sm">
-                            <div class="d-flex gap-3">
-                                <div class="icon-wrapper d-flex align-items-start justify-content-center">
-                                    <img src="/assets/img/service-icons/3.svg" class="img-fluid icon-img" alt="">
-                                </div><!-- Service Icon -->
-
-                                <div>
-                                    <h5 class="card-title mb-1 fw-bold">Customized Workout Programs</h5>
-                                    <p class="card-text mb-0">
-                                        Workouts built around your fitness level, goals, and schedule.
-                                    </p>
-                                </div><!-- Service Details -->
-                            </div>
-
-                            <div class="card-footer bg-transparent border-0 p-0 mt-3">
-                                <a href="tel:3053438788"
-                                    class="btn btn-primary w-100 text-uppercase fw-bold py-2 rounded-3">
-                                    Call Now <i class="fa fa-play ms-2"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div><!-- Service Item -->
-
-                    <div class="col mx-md-auto">
-                        <div class="card h-100 p-3 rounded-4 shadow-sm">
-                            <div class="d-flex gap-3">
-                                <div class="icon-wrapper d-flex align-items-start justify-content-center">
-                                    <img src="/assets/img/service-icons/4.svg" class="img-fluid icon-img" alt="">
-                                </div>
-
-                                <div>
-                                    <h5 class="card-title mb-1 fw-bold">Nutrition & Meal Planning</h5>
-                                    <p class="card-text mb-0">
-                                        Simple, realistic meal plans that support fat loss, muscle gain, and overall
-                                        health.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="card-footer bg-transparent border-0 p-0 mt-3">
-                                <a href="tel:3053438788"
-                                    class="btn btn-primary w-100 text-uppercase fw-bold py-2 rounded-3">
-                                    Call Now <i class="fa fa-play ms-2"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div><!-- Service Item -->
-
-                    <div class="col mx-md-auto">
-                        <div class="card h-100 p-3 rounded-4 shadow-sm">
-                            <div class="d-flex gap-3">
-                                <div class="icon-wrapper d-flex align-items-start justify-content-center">
-                                    <img src="/assets/img/service-icons/5.svg" class="img-fluid icon-img" alt="">
-                                </div><!-- Service Icon -->
-
-                                <div>
-                                    <h5 class="card-title mb-1 fw-bold">All Fitness Levels Welcome</h5>
-                                    <p class="card-text mb-0">
-                                        From beginners to experienced athletes, we meet you where you are.
-                                    </p>
-                                </div><!-- Service Details -->
-                            </div>
-
-                            <div class="card-footer bg-transparent border-0 p-0 mt-3">
-                                <a href="tel:3053438788"
-                                    class="btn btn-primary w-100 text-uppercase fw-bold py-2 rounded-3">
-                                    Call Now <i class="fa fa-play ms-2"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div><!-- Service Item -->
-                </div>
-
-
+              <!-- FOOTER TEXT -->
+              <div class="final-bottom">
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                © <span>Copyright by</span>
+                <strong>Vigor Built & Astra Results Marketing.</strong
+                >&nbsp;<span>All Rights Reserved</span>
+              </div>
+              <div class="credits">
+                <span class="text-white"
+                  >Powered by
+                  <a href="https://astraresults.com/" class="fw-semibold"
+                    >Astra Results Marketing</a
+                  ></span
+                >
+              </div>
             </div>
-        </section><!-- End Services Section -->
+          </div>
+        </div>
+      </section>
 
-        <!-- Advantages Section -->
-        <section class="advantages py-5">
-            <div class="container">
-                <div class="row align-items-center g-5">
+      <!-- RECAPTCHA Professional Popup Modal -->
+      <div class="ui-modal" id="uiModal" aria-hidden="true">
+        <div class="ui-modal__backdrop" data-ui-close></div>
 
-                    <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
-                        <div class="position-relative d-inline-block">
-                            <img src="assets/img/general/advantage-img.webp" class="img-fluid advantage-img"
-                                alt="Advantages Image">
-                        </div>
-                    </div><!-- Advantage IMG -->
-
-                    <div class="col-md-6">
-                        <h4 class="text-uppercase d-none">Benefits & Advantages</h4>
-                        <h2 class="montserrat-700 text-uppercase fs-1 fw-bold">Pros of Training With Vigor Built</h2>
-                        <p class="d-none">We provide personalized fitness coaching designed around your goals, your
-                            lifestyle, and your fitness level.</p>
-
-                        <h5 class="archivo-500 fw-semibold fs-5 mb-4 d-none">Advantages You’ll Enjoy:</h5>
-
-                        <ul class="list-unstyled mb-4">
-                            <li class="d-flex align-items-start manrope-600 text-dark mb-3">
-                                <div class="icon me-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none">
-                                        <g clip-path="url(#clip0_3_104)">
-                                            <path
-                                                d="M23.4172 10.5857L21.7803 8.94915C21.3918 8.56067 21.0735 7.79296 21.0735 7.2424V4.9279C21.0735 3.82691 20.174 2.92747 19.0733 2.92689H16.7579C16.208 2.92689 15.4394 2.60796 15.0509 2.21976L13.4143 0.58321C12.6367 -0.194403 11.3635 -0.194403 10.5859 0.58321L8.94931 2.22094C8.56048 2.60942 7.79101 2.92747 7.24227 2.92747H4.92777C3.82824 2.92747 2.92763 3.82691 2.92763 4.9279V7.24246C2.92763 7.79085 2.60935 8.56096 2.2208 8.94921L0.583954 10.5858C-0.194244 11.3634 -0.194244 12.6366 0.583954 13.4154L2.2208 15.052C2.60958 15.4405 2.92763 16.2103 2.92763 16.7587V19.0733C2.92763 20.1731 3.82824 21.0737 4.92777 21.0737H7.24233C7.79224 21.0737 8.56083 21.392 8.94937 21.7803L10.5859 23.4174C11.3635 24.1944 12.6367 24.1944 13.4144 23.4174L15.0509 21.7803C15.4398 21.3918 16.208 21.0737 16.758 21.0737H19.0734C20.1741 21.0737 21.0735 20.1731 21.0735 19.0733V16.7587C21.0735 16.2079 21.3921 15.4402 21.7804 15.052L23.4172 13.4154C24.1942 12.6366 24.1942 11.3633 23.4172 10.5857ZM10.4125 16.5003L5.9997 12.087L7.41395 10.673L10.4128 13.6719L16.586 7.50016L17.9999 8.91411L10.4125 16.5003Z"
-                                                fill="#e51b27" />
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip0_3_104">
-                                                <rect width="24" height="24" fill="white" />
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
-                                </div><!-- Checkmark Icon -->
-
-                                <div class="details">
-                                    <p class="montserrat-700 text-uppercase mb-0">Unique Fitness Support That Fits Your
-                                        Life</p>
-                                    <span class="montserrat-400 fw-normal fs-5 d-none">Built for hurricanes, high-impact
-                                        events, and forced-entry resistance to keep
-                                        commercial properties protected year-round.</span>
-                                </div>
-                            </li><!-- Advantage One -->
-
-                            <li class="d-flex align-items-start manrope-600 text-dark mb-3">
-                                <div class="icon me-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none">
-                                        <g clip-path="url(#clip0_3_104)">
-                                            <path
-                                                d="M23.4172 10.5857L21.7803 8.94915C21.3918 8.56067 21.0735 7.79296 21.0735 7.2424V4.9279C21.0735 3.82691 20.174 2.92747 19.0733 2.92689H16.7579C16.208 2.92689 15.4394 2.60796 15.0509 2.21976L13.4143 0.58321C12.6367 -0.194403 11.3635 -0.194403 10.5859 0.58321L8.94931 2.22094C8.56048 2.60942 7.79101 2.92747 7.24227 2.92747H4.92777C3.82824 2.92747 2.92763 3.82691 2.92763 4.9279V7.24246C2.92763 7.79085 2.60935 8.56096 2.2208 8.94921L0.583954 10.5858C-0.194244 11.3634 -0.194244 12.6366 0.583954 13.4154L2.2208 15.052C2.60958 15.4405 2.92763 16.2103 2.92763 16.7587V19.0733C2.92763 20.1731 3.82824 21.0737 4.92777 21.0737H7.24233C7.79224 21.0737 8.56083 21.392 8.94937 21.7803L10.5859 23.4174C11.3635 24.1944 12.6367 24.1944 13.4144 23.4174L15.0509 21.7803C15.4398 21.3918 16.208 21.0737 16.758 21.0737H19.0734C20.1741 21.0737 21.0735 20.1731 21.0735 19.0733V16.7587C21.0735 16.2079 21.3921 15.4402 21.7804 15.052L23.4172 13.4154C24.1942 12.6366 24.1942 11.3633 23.4172 10.5857ZM10.4125 16.5003L5.9997 12.087L7.41395 10.673L10.4128 13.6719L16.586 7.50016L17.9999 8.91411L10.4125 16.5003Z"
-                                                fill="#e51b27" />
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip0_3_104">
-                                                <rect width="24" height="24" fill="white" />
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
-                                </div><!-- Checkmark Icon -->
-
-                                <div class="details">
-                                    <p class="montserrat-700 text-uppercase mb-0">Personalized Coaching, No
-                                        Cookie-Cutter Plans</p>
-                                    <span class="montserrat-400 fw-normal fs-5 d-none">Ideal for hotels, offices,
-                                        multi-family units, and retail spaces, reducing outside
-                                        noise by up to 80% for a more comfortable environment.</span>
-                                </div>
-                            </li><!-- Advantage Two -->
-
-                            <li class="d-flex align-items-start manrope-600 text-dark mb-3">
-                                <div class="icon me-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none">
-                                        <g clip-path="url(#clip0_3_104)">
-                                            <path
-                                                d="M23.4172 10.5857L21.7803 8.94915C21.3918 8.56067 21.0735 7.79296 21.0735 7.2424V4.9279C21.0735 3.82691 20.174 2.92747 19.0733 2.92689H16.7579C16.208 2.92689 15.4394 2.60796 15.0509 2.21976L13.4143 0.58321C12.6367 -0.194403 11.3635 -0.194403 10.5859 0.58321L8.94931 2.22094C8.56048 2.60942 7.79101 2.92747 7.24227 2.92747H4.92777C3.82824 2.92747 2.92763 3.82691 2.92763 4.9279V7.24246C2.92763 7.79085 2.60935 8.56096 2.2208 8.94921L0.583954 10.5858C-0.194244 11.3634 -0.194244 12.6366 0.583954 13.4154L2.2208 15.052C2.60958 15.4405 2.92763 16.2103 2.92763 16.7587V19.0733C2.92763 20.1731 3.82824 21.0737 4.92777 21.0737H7.24233C7.79224 21.0737 8.56083 21.392 8.94937 21.7803L10.5859 23.4174C11.3635 24.1944 12.6367 24.1944 13.4144 23.4174L15.0509 21.7803C15.4398 21.3918 16.208 21.0737 16.758 21.0737H19.0734C20.1741 21.0737 21.0735 20.1731 21.0735 19.0733V16.7587C21.0735 16.2079 21.3921 15.4402 21.7804 15.052L23.4172 13.4154C24.1942 12.6366 24.1942 11.3633 23.4172 10.5857ZM10.4125 16.5003L5.9997 12.087L7.41395 10.673L10.4128 13.6719L16.586 7.50016L17.9999 8.91411L10.4125 16.5003Z"
-                                                fill="#e51b27" />
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip0_3_104">
-                                                <rect width="24" height="24" fill="white" />
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
-                                </div><!-- Checkmark Icon -->
-
-                                <div class="details">
-                                    <p class="montserrat-700 text-uppercase mb-0">Clear Guidance and Accountability</p>
-                                    <span class="montserrat-400 fw-normal fs-5 d-none">Stabilize indoor temperatures and
-                                        reduce strain on HVAC systems. Energy-efficient glazing helps cut recurring
-                                        utility costs.</span>
-                                </div>
-                            </li><!-- Advantage Three -->
-
-                            <li class="d-flex align-items-start manrope-600 text-dark mb-3">
-                                <div class="icon me-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none">
-                                        <g clip-path="url(#clip0_3_104)">
-                                            <path
-                                                d="M23.4172 10.5857L21.7803 8.94915C21.3918 8.56067 21.0735 7.79296 21.0735 7.2424V4.9279C21.0735 3.82691 20.174 2.92747 19.0733 2.92689H16.7579C16.208 2.92689 15.4394 2.60796 15.0509 2.21976L13.4143 0.58321C12.6367 -0.194403 11.3635 -0.194403 10.5859 0.58321L8.94931 2.22094C8.56048 2.60942 7.79101 2.92747 7.24227 2.92747H4.92777C3.82824 2.92747 2.92763 3.82691 2.92763 4.9279V7.24246C2.92763 7.79085 2.60935 8.56096 2.2208 8.94921L0.583954 10.5858C-0.194244 11.3634 -0.194244 12.6366 0.583954 13.4154L2.2208 15.052C2.60958 15.4405 2.92763 16.2103 2.92763 16.7587V19.0733C2.92763 20.1731 3.82824 21.0737 4.92777 21.0737H7.24233C7.79224 21.0737 8.56083 21.392 8.94937 21.7803L10.5859 23.4174C11.3635 24.1944 12.6367 24.1944 13.4144 23.4174L15.0509 21.7803C15.4398 21.3918 16.208 21.0737 16.758 21.0737H19.0734C20.1741 21.0737 21.0735 20.1731 21.0735 19.0733V16.7587C21.0735 16.2079 21.3921 15.4402 21.7804 15.052L23.4172 13.4154C24.1942 12.6366 24.1942 11.3633 23.4172 10.5857ZM10.4125 16.5003L5.9997 12.087L7.41395 10.673L10.4128 13.6719L16.586 7.50016L17.9999 8.91411L10.4125 16.5003Z"
-                                                fill="#e51b27" />
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip0_3_104">
-                                                <rect width="24" height="24" fill="white" />
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
-                                </div><!-- Checkmark Icon -->
-
-                                <div class="details">
-                                    <p class="montserrat-700 text-uppercase mb-0">Sustainable Nutrition, Not Extreme
-                                        Diets</p>
-                                    <span class="montserrat-400 fw-normal fs-5 d-none">Modern designs that elevate
-                                        storefronts, commercial facades, and multi-unit buildings while improving
-                                        structural safety.</span>
-                                </div>
-                            </li><!-- Advantage Four -->
-
-                            <li class="d-flex align-items-start manrope-600 text-dark mb-3">
-                                <div class="icon me-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none">
-                                        <g clip-path="url(#clip0_3_104)">
-                                            <path
-                                                d="M23.4172 10.5857L21.7803 8.94915C21.3918 8.56067 21.0735 7.79296 21.0735 7.2424V4.9279C21.0735 3.82691 20.174 2.92747 19.0733 2.92689H16.7579C16.208 2.92689 15.4394 2.60796 15.0509 2.21976L13.4143 0.58321C12.6367 -0.194403 11.3635 -0.194403 10.5859 0.58321L8.94931 2.22094C8.56048 2.60942 7.79101 2.92747 7.24227 2.92747H4.92777C3.82824 2.92747 2.92763 3.82691 2.92763 4.9279V7.24246C2.92763 7.79085 2.60935 8.56096 2.2208 8.94921L0.583954 10.5858C-0.194244 11.3634 -0.194244 12.6366 0.583954 13.4154L2.2208 15.052C2.60958 15.4405 2.92763 16.2103 2.92763 16.7587V19.0733C2.92763 20.1731 3.82824 21.0737 4.92777 21.0737H7.24233C7.79224 21.0737 8.56083 21.392 8.94937 21.7803L10.5859 23.4174C11.3635 24.1944 12.6367 24.1944 13.4144 23.4174L15.0509 21.7803C15.4398 21.3918 16.208 21.0737 16.758 21.0737H19.0734C20.1741 21.0737 21.0735 20.1731 21.0735 19.0733V16.7587C21.0735 16.2079 21.3921 15.4402 21.7804 15.052L23.4172 13.4154C24.1942 12.6366 24.1942 11.3633 23.4172 10.5857ZM10.4125 16.5003L5.9997 12.087L7.41395 10.673L10.4128 13.6719L16.586 7.50016L17.9999 8.91411L10.4125 16.5003Z"
-                                                fill="#e51b27" />
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip0_3_104">
-                                                <rect width="24" height="24" fill="white" />
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
-                                </div><!-- Checkmark Icon -->
-
-                                <div class="details">
-                                    <p class="montserrat-700 text-uppercase mb-0">Flexible Training Options, In-Person
-                                        or Online</p>
-                                    <span class="montserrat-400 fw-normal fs-5 d-none">Qualify commercial properties for
-                                        potential insurance credits with approved impact systems and wind-mitigation
-                                        documentation.</span>
-                                </div>
-                            </li><!-- Advantage Five -->
-
-                            <li class="d-flex align-items-start manrope-600 text-dark mb-3">
-                                <div class="icon me-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none">
-                                        <g clip-path="url(#clip0_3_104)">
-                                            <path
-                                                d="M23.4172 10.5857L21.7803 8.94915C21.3918 8.56067 21.0735 7.79296 21.0735 7.2424V4.9279C21.0735 3.82691 20.174 2.92747 19.0733 2.92689H16.7579C16.208 2.92689 15.4394 2.60796 15.0509 2.21976L13.4143 0.58321C12.6367 -0.194403 11.3635 -0.194403 10.5859 0.58321L8.94931 2.22094C8.56048 2.60942 7.79101 2.92747 7.24227 2.92747H4.92777C3.82824 2.92747 2.92763 3.82691 2.92763 4.9279V7.24246C2.92763 7.79085 2.60935 8.56096 2.2208 8.94921L0.583954 10.5858C-0.194244 11.3634 -0.194244 12.6366 0.583954 13.4154L2.2208 15.052C2.60958 15.4405 2.92763 16.2103 2.92763 16.7587V19.0733C2.92763 20.1731 3.82824 21.0737 4.92777 21.0737H7.24233C7.79224 21.0737 8.56083 21.392 8.94937 21.7803L10.5859 23.4174C11.3635 24.1944 12.6367 24.1944 13.4144 23.4174L15.0509 21.7803C15.4398 21.3918 16.208 21.0737 16.758 21.0737H19.0734C20.1741 21.0737 21.0735 20.1731 21.0735 19.0733V16.7587C21.0735 16.2079 21.3921 15.4402 21.7804 15.052L23.4172 13.4154C24.1942 12.6366 24.1942 11.3633 23.4172 10.5857ZM10.4125 16.5003L5.9997 12.087L7.41395 10.673L10.4128 13.6719L16.586 7.50016L17.9999 8.91411L10.4125 16.5003Z"
-                                                fill="#e51b27" />
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip0_3_104">
-                                                <rect width="24" height="24" fill="white" />
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
-                                </div><!-- Checkmark Icon -->
-
-                                <div class="details">
-                                    <p class="montserrat-700 text-uppercase mb-0">Confidence, Strength, and Long-Term
-                                        Results</p>
-                                    <span class="montserrat-400 fw-normal fs-5 d-none">Qualify commercial properties for
-                                        potential insurance credits with approved impact systems and wind-mitigation
-                                        documentation.</span>
-                                </div>
-                            </li><!-- Advantage Six -->
-
-                        </ul><!-- List Of Advantages -->
-
-                        <a href="tel:3053438788" class="btn btn-secondary rounded-2 text-uppercase">
-                            Start your transformation plan! <i class="fa fa-play"></i></a>
-                        </a><!-- CTA Button -->
-                    </div><!-- Advantage Content -->
-                </div>
+        <div
+          class="ui-modal__card"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="uiModalTitle"
+        >
+          <div class="ui-modal__header">
+            <div class="ui-modal__icon">!</div>
+            <div>
+              <div class="ui-modal__title" id="uiModalTitle">
+                Action required
+              </div>
+              <div class="ui-modal__subtitle">
+                Please review the message below.
+              </div>
             </div>
-        </section><!-- End Advantages Section -->
+          </div>
 
-        <!-- Gallery Section -->
-        <section id="gallery" class="gallery section py-5">
-            <div class="hero-background">
-                <div class="hero-overlay"></div>
-            </div>
+          <div class="ui-modal__body" id="uiModalMsg">
+            <!-- message injected by JS -->
+          </div>
 
-            <div class="container">
-                <div class="row justify-content-center text-center">
-                    <div class="col-12">
-                        <div class="gallery-content mb-5">
-                            <!-- <h4 class="montserrat-400 text-white text-uppercase">Previous Work</h4> -->
-                            <h2 class="text-uppercase text-white">VIEW OUR RESULTS</h2>
-                        </div>
-                    </div>
-
-                    <!-- Gallery -->
-                    <div class="col-12">
-                        <div class="row g-4 justify-content-center">
-
-                            <div class="col-md-4 col-sm-6">
-                                <img src="assets/img/gallery/gallery-img-1.webp"
-                                    class="img-fluid rounded-3 w-100 h-100 object-fit-cover"
-                                    alt="Technician marking inspection spot on floor">
-                            </div><!-- Gallery Image -->
-
-                            <div class="col-md-4 col-sm-6">
-                                <img src="assets/img/gallery/gallery-img-2.webp"
-                                    class="img-fluid rounded-3 w-100 h-100 object-fit-cover"
-                                    alt="Pipe with Aqua Pro label">
-                            </div><!-- Gallery Image -->
-
-                            <div class="col-md-4 col-sm-6">
-                                <img src="assets/img/gallery/gallery-img-3.webp"
-                                    class="img-fluid rounded-3 w-100 h-100 object-fit-cover"
-                                    alt="Technician preparing pipe relining">
-                            </div><!-- Gallery Image -->
-
-                            <div class="col-md-4 col-sm-6">
-                                <img src="assets/img/gallery/gallery-img-4.webp"
-                                    class="img-fluid rounded-3 w-100 h-100 object-fit-cover"
-                                    alt="Technician preparing pipe relining">
-                            </div><!-- Gallery Image -->
-
-                            <div class="col-md-4 col-sm-6">
-                                <img src="assets/img/gallery/gallery-img-5.webp"
-                                    class="img-fluid rounded-3 w-100 h-100 object-fit-cover"
-                                    alt="Technician preparing pipe relining">
-                            </div><!-- Gallery Image -->
-
-                            <div class="col-md-4 col-sm-6">
-                                <img src="assets/img/gallery/gallery-img-6.webp"
-                                    class="img-fluid rounded-3 w-100 h-100 object-fit-cover"
-                                    alt="Technician preparing pipe relining">
-                            </div><!-- Gallery Image -->
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section><!-- End Gallery Section -->
-
-        <!-- Testimonials Section -->
-        <section id="testimonials" class="testimonials section py-5">
-            <div class="container">
-                <!-- <div class="row justify-content-center text-center mb-5">
-                    <div class="col-12">
-                        <h4 class="text-uppercase">Testimonials</h4>
-                        <h2 class="montserrat-700 text-uppercase fs-1 fw-bold">What Our Customers Say</h2>
-                    </div>
-                </div>
-
-                <div class="row g-4">
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="card h-100 shadow-sm border-1 rounded-4 p-4">
-                            <p class="testimonial-text mb-4">
-                                Hands down the most knowledgeable and hard working plumber that I have ever used. Angel
-                                is the owner and
-                                he has a get it done attitude and work ethic. When I hit roadblocks with other plumbers
-                                telling me that
-                                something couldn't be done, Angel came to my business and said there always a way and
-                                that he would get
-                                what iv needed done. It took him 1 full day of work to do a job that another company
-                                spent 3 days trying
-                                to do. If you want a plumber that knows how to get things done fast and done the right
-                                way. I would
-                                highly recommend this company. Thank you Angel for helping us get back up and running
-                                and having our
-                                plumbing issue fixed.
-                            </p>
-                            <button
-                                class="btn btn-link text-decoration-none text-primary text-start p-0 read-more-btn mt-0">
-                                Read more
-                            </button>
-                            <h6 class="fw-bold text-uppercase mt-3 mb-1">James Vierra</h6>
-                            <div class="text-warning">
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="card h-100 shadow-sm border-1 rounded-4 p-4">
-                            <p class="testimonial-text mb-4">
-                                I used Storm Impact Homes for replacement of my kitchen faucet and disposal. Angel was
-                                extremely easy to reach.
-                                I could tell that he had tremendous experience in the field as he diagnosed my issue
-                                before even
-                                stepping foot inside my apartment. He was very efficient but made sure the job was done
-                                correctly and
-                                didn’t rush. When it became apparent that we needed another piece to the disposal, he
-                                waited while I
-                                went to Home Depot to pick up the missing piece. Overall, my experience was excellent
-                                and I would use
-                                him again if I had to.
-                            </p>
-                            <button
-                                class="btn btn-link text-decoration-none text-primary text-start p-0 read-more-btn mt-0">
-                                Read more
-                            </button>
-                            <h6 class="fw-bold text-uppercase mt-3 mb-1">Adam Koller</h6>
-                            <div class="text-warning">
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="card h-100 shadow-sm border-1 rounded-4 p-4">
-                            <p class="testimonial-text mb-4">
-                                Great experience overall. Spoke to Angel when I had plumbing problems and he came same
-                                day. He gave me a
-                                great price and told me he can come as soon as next day. Very professional and very
-                                fast. He ended up
-                                changing a toilet and fill valve on second floor. He didn’t even charge me for disposal.
-                                Will be using
-                                them as our in house plumbing service
-                            </p>
-                            <button
-                                class="btn btn-link text-decoration-none text-primary text-start p-0 read-more-btn mt-0">
-                                Read more
-                            </button>
-                            <h6 class="fw-bold text-uppercase mt-3 mb-1">University Pharmacy Coral Gables</h6>
-                            <div class="text-warning">
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="card h-100 shadow-sm border-1 rounded-4 p-4">
-                            <p class="testimonial-text mb-4">Angel from Storm Impact Homes installed a new water heater
-                                for our home this
-                                weekend and did an excellent job. He was very professional, efficient, and had a great
-                                pricing. He
-                                explained everything to us as well throughout the process. I would definitely recommend
-                                him.</p>
-                            <button
-                                class="btn btn-link text-decoration-none text-primary text-start p-0 read-more-btn mt-0">
-                                Read more
-                            </button>
-                            <h6 class="fw-bold text-uppercase mt-3 mb-1">M. Caskey</h6>
-                            <div class="text-warning">
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-            </div>
-        </section><!-- End Testimonials Section -->
-
-        <!-- Footer Section -->
-        <section id="contact-section" class="contact-section">
-            <div class="container">
-                <div class="row g-5 align-items-start align-items-lg-stretch">
-
-                    <div class="col-lg-5 d-flex flex-column justify-content-center">
-                        <div>
-                            <div class="d-flex align-items-center mb-5">
-                                <img src="assets/img/logo.webp" width="100" alt="Logo">
-                            </div>
-                            <h2 class="text-uppercase">Start Seeing Progress Today</h2>
-                            <p class="montserrat-400 text-white fs-6">
-                                Stop guessing and start seeing real progress. Whether you want to lose weight, build
-                                muscle, improve energy, or feel stronger, Vigor Built creates a plan that works for you.
-                                Book your consultation today and take the first step toward results that last.
-                            </p>
-                            <div class="hero-btns mb-4">
-                                <a href="tel:3053438788" class="btn btn-outline-light cta-btn">
-                                    <span class="btn-text text-uppercase">Get a Free Quote Now!</span><br>
-                                    <span class="btn-number text-uppercase">CALL (305) 343-8788</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-7 d-flex flex-column justify-content-end">
-                        <div class="contact-form-wrapper">
-                            <h2 class="text-uppercase text-center">#1 Personal Training Built Around You</h2>
-                            <h4 class="text-uppercase text-center">15% OFF WITH A FREE CONSULTATION</h4>
-
-                            <form id="contactFormFooter" method="POST" class="contact-form row g-3">
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" name="full_name"
-                                            placeholder="Your full name" required>
-                                        <label>Full name</label>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" name="address"
-                                            placeholder="Complete Address" required>
-                                        <label>Complete Address</label>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-4">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" name="email"
-                                            placeholder="name@example.com" required>
-                                        <label>Email address</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-floating">
-                                        <input type="tel" class="form-control" name="phone"
-                                            placeholder="Your phone number" required>
-                                        <label>Phone number</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-floating">
-                                        <select class="form-select" name="service" required>
-                                            <option value="" disabled selected>Select a service</option>
-                                            <option value="One on One Training">One on One Training</option>
-                                            <option value="Online Coaching">Online Coaching</option>
-                                            <option value="Nutrition Planning">Nutrition Planning</option>
-                                        </select>
-                                        <label>Select a service</label>
-                                    </div>
-                                </div>
-
-                                <!-- reCAPTCHA Widget -->
-                                <div class="col-12 d-flex justify-content-center">
-                                    <div class="g-recaptcha" data-sitekey="6LdcNUMsAAAAAJKVs4p4lYGGohI77NLgECg_6Ayv">
-                                    </div>
-                                </div>
-
-                                <div class="col-12">
-                                    <button type="submit"
-                                        class="btn montserrat-700 text-uppercase text-white fs-5 w-100 d-flex align-items-center justify-content-center text-center">
-                                        Get Help Now
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17"
-                                            viewBox="0 0 16 17" fill="none">
-                                            <path
-                                                d="M14.3117 9.6767L3.03678 16.1282C1.94321 16.7531 0.659276 15.6742 1.0889 14.4903L3.25403 8.5002L1.0889 2.51001C0.659276 1.32363 1.94321 0.247196 3.03678 0.872071L14.3117 7.32357C15.2245 7.84351 15.2222 9.15676 14.3117 9.6767Z"
-                                                fill="white" />
-                                        </svg>
-                                    </button>
-                                    <p class="montserrat-400 fw-normal text-white text-center mt-2">
-                                        All of your personal information is stored in a safe location.
-                                    </p>
-                                </div>
-                            </form>
-                        </div>
-                    </div><!-- Contact Form -->
-
-                </div>
-            </div>
-
-            <!-- Footer -->
-            <div class="container copyright text-center mt-5 p-0">
-                <p class="montserrat-400 text-white">
-                    <script>document.write(new Date().getFullYear());</script> © <span>Copyright by</span>
-                    <strong class="fw-semibold">Vigor Built & Astra Results Marketing.</strong>&nbsp;<span>All Rights
-                        Reserved</span>
-                </p>
-                <div class="credits">
-                    <span class="text-white">Developed by <a href="https://astraresults.com/" class="fw-semibold">Astra
-                            Results
-                            Marketing</a></span>
-                </div>
-            </div>
-        </section><!-- End Footer Section -->
-
+          <div class="ui-modal__footer">
+            <button type="button" class="ui-modal__btn" data-ui-close>
+              OK
+            </button>
+          </div>
+        </div>
+      </div>
     </main>
 
-    <!-- Scroll Top -->
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
-
-    <!-- Preloader -->
-    <div id="preloader"></div>
-
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/geolocation/geotarget.js"></script>
-    <script src="assets/vendor/readmore-readless/readmore-readless.js"></script>
-
-    <!-- Owl Carousel -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-    <!-- Main JS File -->
-    <script src="assets/js/main.js"></script>
+    <!-- Geotarget (updates #location) -->
     <script src="assets/js/mail.js"></script>
+    <script src="assets/js/geotarget.js" defer></script>
+
+    <!-- Optional: mirror location text into hero pill -->
+    <script>
+      // If your geotarget updates #location, copy it to heroLocation as well
+      window.addEventListener("load", () => {
+        const headerLoc = document.getElementById("location");
+        const heroLoc = document.getElementById("heroLocation");
+        if (headerLoc && heroLoc) heroLoc.textContent = headerLoc.textContent;
+      });
+    </script>
 
     <script>
-        $(document).ready(function () {
-            $(".owl-carousel").owlCarousel({
-                loop: true,
-                margin: 12,
-                autoplay: true,
-                autoplayTimeout: 2500,
-                autoplayHoverPause: true,
-                dots: true,
-                nav: false,
-                responsive: {
-                    0: {
-                        items: 2,
-                        center: true,
-                        margin: 12
-                    },
-                    768: {
-                        items: 3,
-                        center: false
-                    },
-                    1024: {
-                        items: 4
-                    }
-                }
-            });
+      (() => {
+        const wrap = document.querySelector(".hero-steps");
+        if (!wrap) return;
+
+        const steps = Array.from(document.querySelectorAll(".hero-step"));
+        const nextBtn = document.getElementById("heroNextBtn");
+        const submitBtn = document.getElementById("heroSubmitBtn");
+        const stepNum = document.getElementById("heroStepNum");
+
+        let current = 1;
+
+        function show(step) {
+          current = step;
+          wrap.setAttribute("data-step", String(step));
+
+          steps.forEach((s) =>
+            s.classList.toggle("is-active", s.dataset.step == String(step))
+          );
+
+          const isLast = step === 3;
+          nextBtn.style.display = isLast ? "none" : "inline-flex";
+          submitBtn.style.display = isLast ? "inline-flex" : "none";
+
+          if (stepNum) stepNum.textContent = String(step);
+        }
+
+        function validateStep(step) {
+          const panel = steps.find((s) => s.dataset.step == String(step));
+          if (!panel) return true;
+
+          const fields = Array.from(
+            panel.querySelectorAll("input, select, textarea")
+          ).filter((el) => el.hasAttribute("required"));
+
+          for (const el of fields) {
+            if (!el.checkValidity()) {
+              el.reportValidity();
+              return false;
+            }
+          }
+          return true;
+        }
+
+        nextBtn.addEventListener("click", () => {
+          if (!validateStep(current)) return;
+          show(Math.min(3, current + 1));
         });
-    </script><!-- Owl Carousel Init -->
 
-    <!-- CallRail JS Snippet -->
-    <script type="text/javascript"
-        src="//cdn.callrail.com/companies/684147658/b1bbd1e2271ba21f1d50/12/swap.js"></script>
-</body>
+        show(1);
+      })();
+    </script>
 
+    <!-- REVIEW MODAL SCRIPT -->
+    <script>
+      (() => {
+        const modal = document.getElementById("reviewModal");
+        const modalText = document.getElementById("reviewModalText");
+        const modalName = document.getElementById("reviewModalName");
+        const modalStars = document.getElementById("reviewModalStars");
+
+        if (!modal || !modalText || !modalName || !modalStars) return;
+
+        function openModal({ text, name, stars }) {
+          modal.classList.add("is-open");
+          modal.setAttribute("aria-hidden", "false");
+
+          modalText.textContent = text || "";
+          modalName.textContent = name || "";
+
+          const count = Math.max(1, Math.min(5, parseInt(stars || "5", 10)));
+          modalStars.textContent =
+            "★★★★★".slice(0, count) + "☆☆☆☆☆".slice(0, 5 - count);
+
+          document.body.style.overflow = "hidden";
+        }
+
+        function closeModal() {
+          modal.classList.remove("is-open");
+          modal.setAttribute("aria-hidden", "true");
+          document.body.style.overflow = "";
+        }
+
+        document.addEventListener("click", (e) => {
+          const btn = e.target.closest(".js-readmore");
+          if (!btn) return;
+
+          const card = btn.closest(".review2-card");
+          const p = card?.querySelector(".review2-text");
+          if (!p) return;
+
+          openModal({
+            text: p.getAttribute("data-full") || p.textContent.trim(),
+            name: p.getAttribute("data-name") || "",
+            stars: p.getAttribute("data-stars") || "5",
+          });
+        });
+
+        modal.addEventListener("click", (e) => {
+          if (e.target.matches("[data-close='true']")) closeModal();
+        });
+
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape" && modal.classList.contains("is-open"))
+            closeModal();
+        });
+      })();
+    </script>
+
+    <script>
+      (() => {
+        const btn = document.getElementById("footerTopBtn");
+        if (!btn) return;
+        btn.addEventListener("click", () =>
+          window.scrollTo({ top: 0, behavior: "smooth" })
+        );
+      })();
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // ✅ Modal helpers
+        const uiModal = document.getElementById("uiModal");
+        const uiModalMsg = document.getElementById("uiModalMsg");
+
+        function openUiModal(message) {
+          if (!uiModal || !uiModalMsg) return;
+          uiModalMsg.textContent = message;
+          uiModal.classList.add("is-open");
+          uiModal.setAttribute("aria-hidden", "false");
+        }
+
+        function closeUiModal() {
+          if (!uiModal) return;
+          uiModal.classList.remove("is-open");
+          uiModal.setAttribute("aria-hidden", "true");
+        }
+
+        // close handlers
+        if (uiModal) {
+          uiModal.addEventListener("click", (e) => {
+            if (e.target && e.target.hasAttribute("data-ui-close"))
+              closeUiModal();
+          });
+        }
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape") closeUiModal();
+        });
+
+        // ===== your form validation logic =====
+        const forms = [
+          document.querySelector("form.hero-form"),
+          document.querySelector("form.final-form"),
+        ].filter(Boolean);
+
+        const widgetByForm = new Map();
+
+        if (
+          typeof grecaptcha !== "undefined" &&
+          typeof grecaptcha.render === "function"
+        ) {
+          forms.forEach((form) => {
+            const el = form.querySelector(".g-recaptcha");
+            if (!el) return;
+            if (el.dataset.rendered === "true") return;
+
+            const widgetId = grecaptcha.render(el, {
+              sitekey: el.getAttribute("data-sitekey"),
+              size: el.getAttribute("data-size") || "normal",
+            });
+
+            el.dataset.rendered = "true";
+            el.dataset.widgetId = String(widgetId);
+            widgetByForm.set(form, widgetId);
+          });
+        }
+
+        forms.forEach((form) => {
+          form.addEventListener("submit", (e) => {
+            if (!form.checkValidity()) {
+              e.preventDefault();
+              form.reportValidity();
+              return;
+            }
+
+            if (typeof grecaptcha !== "undefined") {
+              const wid = widgetByForm.get(form);
+              const response =
+                typeof wid === "number"
+                  ? grecaptcha.getResponse(wid)
+                  : grecaptcha.getResponse();
+
+              if (!response) {
+                e.preventDefault();
+                openUiModal("Please complete the reCAPTCHA to submit.");
+              }
+            }
+          });
+        });
+      });
+    </script>
+
+    <!-- CallRail -->
+    <script
+      type="text/javascript"
+      src="//cdn.callrail.com/companies/684147658/b1bbd1e2271ba21f1d50/12/swap.js"
+    ></script>
+  </body>
 </html>
