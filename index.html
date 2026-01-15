@@ -66,7 +66,12 @@
     <link rel="stylesheet" href="assets/css/recaptcha.css" />
     <link rel="stylesheet" href="assets/css/footer.css" />
     <!-- Google reCAPTCHA v2 -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script
+      src="https://www.google.com/recaptcha/api.js?onload=onRecaptchaLoad&render=explicit"
+      async
+      defer
+    ></script>
+
     <style>
       .disabled-link {
         pointer-events: none; /* disables click */
@@ -1068,6 +1073,34 @@
     </script>
 
     <script>
+      // ✅ Make this global because reCAPTCHA calls it via ?onload=...
+      let widgetByForm = new Map();
+
+      function onRecaptchaLoad() {
+        const forms = [
+          document.querySelector("form.hero-form"),
+          document.querySelector("form.final-form"),
+        ].filter(Boolean);
+
+        widgetByForm = new Map();
+
+        forms.forEach((form) => {
+          const el = form.querySelector(".g-recaptcha");
+          if (!el) return;
+
+          // prevent double-render if page scripts rerun
+          if (el.dataset.widgetId) return;
+
+          const widgetId = grecaptcha.render(el, {
+            sitekey: el.getAttribute("data-sitekey"),
+            size: el.getAttribute("data-size") || "normal",
+          });
+
+          el.dataset.widgetId = String(widgetId);
+          widgetByForm.set(form, widgetId);
+        });
+      }
+
       document.addEventListener("DOMContentLoaded", () => {
         // ✅ Modal helpers
         const uiModal = document.getElementById("uiModal");
@@ -1097,33 +1130,11 @@
           if (e.key === "Escape") closeUiModal();
         });
 
-        // ===== your form validation logic =====
+        // ✅ Form submit validation (works for BOTH hero + footer)
         const forms = [
           document.querySelector("form.hero-form"),
           document.querySelector("form.final-form"),
         ].filter(Boolean);
-
-        const widgetByForm = new Map();
-
-        if (
-          typeof grecaptcha !== "undefined" &&
-          typeof grecaptcha.render === "function"
-        ) {
-          forms.forEach((form) => {
-            const el = form.querySelector(".g-recaptcha");
-            if (!el) return;
-            if (el.dataset.rendered === "true") return;
-
-            const widgetId = grecaptcha.render(el, {
-              sitekey: el.getAttribute("data-sitekey"),
-              size: el.getAttribute("data-size") || "normal",
-            });
-
-            el.dataset.rendered = "true";
-            el.dataset.widgetId = String(widgetId);
-            widgetByForm.set(form, widgetId);
-          });
-        }
 
         forms.forEach((form) => {
           form.addEventListener("submit", (e) => {
@@ -1133,16 +1144,22 @@
               return;
             }
 
+            // ✅ reCAPTCHA check per-form (correct widget)
             if (typeof grecaptcha !== "undefined") {
-              const wid = widgetByForm.get(form);
-              const response =
-                typeof wid === "number"
-                  ? grecaptcha.getResponse(wid)
-                  : grecaptcha.getResponse();
+              const widgetId = widgetByForm.get(form);
 
+              // If widget isn't ready yet, block submit (prevents false positives)
+              if (typeof widgetId !== "number") {
+                e.preventDefault();
+                openUiModal("reCAPTCHA is still loading. Please try again.");
+                return;
+              }
+
+              const response = grecaptcha.getResponse(widgetId);
               if (!response) {
                 e.preventDefault();
                 openUiModal("Please complete the reCAPTCHA to submit.");
+                return;
               }
             }
           });
