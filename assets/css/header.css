@@ -2,6 +2,13 @@
    HEADER V2 (FIXED / CLEAN)
 ========================= */
 
+.site-header,
+.header-inner,
+.header-v2 {
+    box-sizing: border-box;
+}
+
+
 .site-header {
     position: sticky;
     top: 0;
@@ -120,26 +127,65 @@
     }
 }
 
+/* =========================
+   MOBILE HEADER: logo left, CTA right
+========================= */
 @media (max-width: 768px) {
-
-    /* keep header row: logo left, CTA right */
     .header-v2 {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        gap: 12px;
+        gap: 10px;
+        padding: 10px 14px;
     }
 
-    /* CTA block: button + text centered as a group */
-    .call-wrap {
+    /* LEFT: LOGO */
+    .header-logo {
+        flex: 0 0 auto;
+        display: flex;
         align-items: center;
-        /* ✅ center items */
+        justify-content: flex-start;
+    }
+
+    .header-logo img {
+        height: 44px;
+        width: auto;
+        max-width: 160px;
+        /* keep it from pushing CTA */
+        object-fit: contain;
+    }
+
+    /* RIGHT: CTA (button + subtitle) */
+    .header-cta {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .call-wrap {
+        width: auto;
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
         gap: 4px;
     }
 
+    .btn-solid {
+        font-size: 20px;
+        /* bigger CALL NOW */
+        font-weight: 900;
+        letter-spacing: .5px;
+        padding: 14px 22px;
+        /* taller pill */
+        max-width: 240px;
+        /* keeps it from overflowing */
+    }
+
     .call-sub {
-        text-align: center;
-        /* ✅ center the text */
-        width: 100%;
+        font-size: 10px;
+        /* subtitle like the pic */
+        font-weight: 800;
+        letter-spacing: .3px;
     }
 }

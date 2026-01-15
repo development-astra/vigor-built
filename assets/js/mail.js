@@ -1,6 +1,6 @@
 (() => {
     // ✅ Change this when you deploy:
-    const API_URL = 'https://api.astraresults.com/send_email/v1/vigor_built'
+    const API_URL = "https://api.astraresults.com/send_email/v1/vigor_built";
     // const API_URL = "http://localhost:4848/send_email/v1/green-air";
 
     function qs(sel, root = document) {
